@@ -1,6 +1,7 @@
 var BubbleSort = require('./BubbleSort');
 var InsertSort = require('./InsertSort');
 var SelectSort = require('./SelectSort');
+var HeapSort = require('./HeapSort');
 
 function generateRandomAray(maxSize, maxValue) {
     var n = parseInt((maxSize+1)*Math.random());
@@ -34,6 +35,7 @@ function printArray(nums) {
     for(var i = 0; i < nums.length; i++) {
         s += nums[i]+ " ";
     }
+    console.log(s);
 }
 
 function comparator(nums) {
@@ -41,14 +43,17 @@ function comparator(nums) {
 }
 // 测试
 
-var testTime = 1000;
+var testTime = 100;
 var maxSize = 100;
 var maxValue = 100;
 var succeed = true;
 for(var i = 0; i < testTime; i++) {
     var arr1 = generateRandomAray(maxSize, maxValue);
     var arr2 = [...arr1];
-    SelectSort(arr1);
+    // BubbleSort(arr1);
+    // InsertSort(arr1);
+    // SelectSort(arr1);
+    HeapSort(arr1);
     comparator(arr2);
     if(!isEqual(arr1, arr2)) {
         succeed = false;
