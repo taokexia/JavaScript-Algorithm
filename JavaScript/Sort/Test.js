@@ -3,6 +3,7 @@ var InsertSort = require('./InsertSort');
 var SelectSort = require('./SelectSort');
 var HeapSort = require('./HeapSort');
 var QuickSort = require('./QuickSort');
+var MergeSort = require('./MergeSort');
 
 function generateRandomAray(maxSize, maxValue) {
     var n = parseInt((maxSize+1)*Math.random());
@@ -55,7 +56,8 @@ for(var i = 0; i < testTime; i++) {
     // InsertSort(arr1);
     // SelectSort(arr1);
     // HeapSort(arr1);
-    QuickSort(arr1);
+    // QuickSort(arr1);
+    MergeSort(arr1);
     comparator(arr2);
     if(!isEqual(arr1, arr2)) {
         succeed = false;
