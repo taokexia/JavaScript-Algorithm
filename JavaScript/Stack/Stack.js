@@ -1,14 +1,17 @@
 /*
  * 栈的实现
  */
-function Stack() {
+module.exports = function Stack() {
+    // 栈中的属性、方法
     this.dataStore = [];
+    // 栈顶计数
     this.top = 0;
     this.push = push;
     this.pop = pop;
     this.peek = peek;
     this.clear = clear;
-    this.length = length;
+    this.size = size;
+    this.isEmpty = isEmpty;
 }
 
 // 往栈中推入数据
@@ -32,7 +35,12 @@ function clear() {
 }
 
 // 返回栈的长度
-function length() {
+function size() {
     return this.top;
+}
+
+// 判断是否为空
+function isEmpty() {
+    return this.top === 0;
 }
 
