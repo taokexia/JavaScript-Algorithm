@@ -16,7 +16,6 @@ function dec2bin(decNumber) {
     while(!stack.isEmpty()) {
         binStr += stack.pop();
     }
-    console.log(binStr);
     return binStr;
 }
 
