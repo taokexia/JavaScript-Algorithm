@@ -10,6 +10,7 @@ module.exports = function Queue() {
     this.toString = toString;
     this.empty = empty;
     this.count = count;
+    this.has = has;
 }
 
 // 向队尾添加一个元素
@@ -52,4 +53,9 @@ function empty() {
 // 显示队列元素的个数
 function count() {
     return this.dataStore.length;
+}
+
+// 判断当前队列是否有element元素
+function has(element) {
+    return this.dataStore.indexOf(element);
 }
