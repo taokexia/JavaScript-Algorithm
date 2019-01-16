@@ -1,4 +1,6 @@
 // manacher算法
+// 用于计算字符串的最长回文半径
+// 时间复杂度O(n)
 module.exports = function manacher(str) {
     var newStr = init(str); // 转化字符串
     var maxLen = -1; // 最长回文长度
