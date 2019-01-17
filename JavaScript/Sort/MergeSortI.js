@@ -60,7 +60,7 @@ function _merge(arr, l, mid, r) {
  * @param r
  * @private
  */
-module.exprts.nonRecMergeSort = function nonRecMergeSort(arr) {
+module.exports.nonRecMergeSort = function nonRecMergeSort(arr) {
     var stack = [],
         res = [],
         start = 0,
@@ -96,3 +96,18 @@ module.exprts.nonRecMergeSort = function nonRecMergeSort(arr) {
     }
 
 }
+
+// 使用自底向上的归并排序算法
+// Merge Sort BU 也是一个O(nlogn)复杂度的算法，虽然只使用两重for循环
+// 所以，Merge Sort BU也可以在1秒之内轻松处理100万数量级的数据
+// 注意：不要轻易根据循环层数来判断算法的复杂度，Merge Sort BU就是一个反例
+module.exports.mergeSortBottom = function mergeSortBottom(arr) {
+    let len = arr.length;
+    for (let sz = 1; sz <= len; sz += sz) {
+        for (let i = 0; i + sz <= len; i += sz + sz) {
+            // 对arr[i...i+sz-1]和arr[i+sz.....i+2*sz-1]排序
+            _merge(arr, i, i + sz - 1, Math.min(i + sz + sz - 1, len - 1));
+        }
+    }
+}
+

@@ -107,22 +107,23 @@ LinkedList.prototype.indexOf = function(element) {
 // 根据元素删除信息
 LinkedList.prototype.remove = function(element) {
     var index = this.indexOf(element);
-    return this.removeAt(index);
+    if(index !== -1)
+        return this.removeAt(index);
 }
 
 // 判断链表是否为空
 LinkedList.prototype.isEmpty = function () {
-    return this.length == 0
+    return this.length == 0;
 }
 
 // 获取链表的长度
 LinkedList.prototype.size = function () {
-    return this.length
+    return this.length;
 }
 
 // 获取第一个节点
 LinkedList.prototype.getFirst = function () {
-    return this.head.element
+    return this.head.element;
 }
 
 // 链表的toString方法
