@@ -30,3 +30,23 @@ var arr3 = [1, 8, 9, 2, 4, 5, 10, 21];
 indexMaxHeap.indexMaxHeapSort(arr3);
 console.log(arr3);
 
+// 测试最小堆
+console.log("==========测试最小堆=================");
+var MinHeap = require('./MinHeap');
+var minHeap = new MinHeap();
+minHeap.insert(10);
+minHeap.insert(7);
+minHeap.insert(6);
+minHeap.insert(9);
+minHeap.insert(4);
+minHeap.insert(5);
+console.log(minHeap.extractMin());
+console.log(minHeap.getMin());
+var minHeap2 = new MinHeap();
+var arr3 = [1, 8, 9, 2, 4, 5, 10, 21];
+// 利用最小堆排序;
+minHeap2.init([...arr3]);
+for(var i = 0; i < arr3.length; i++) {
+    arr3[i] = minHeap2.extractMin();
+}
+console.log(arr3);
