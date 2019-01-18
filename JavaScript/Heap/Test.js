@@ -22,3 +22,11 @@ console.log(arr1);
 var arr2 = [1, 8, 9, 2, 4, 5, 10, 21];
 heap.heapSort2(arr2);
 console.log(arr2);
+
+// 测试最大索引堆
+console.log("==========测试最大索引堆=================");
+var indexMaxHeap = require('./IndexMaxHeap');
+var arr3 = [1, 8, 9, 2, 4, 5, 10, 21];
+indexMaxHeap.indexMaxHeapSort(arr3);
+console.log(arr3);
+

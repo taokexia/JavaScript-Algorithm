@@ -61,6 +61,23 @@ module.exports.maxHeap = class MaxHeap {
             k = j;
         }
     }
+    // 优化shiftDown,使用赋值的方式取代不断的swap
+    // 优化思路借鉴插入排序的优化思路
+    shiftDownII(k) {
+        // 先保持k索引对应的值
+        var t = this.data[k];
+        while(2*k+1 <= this.count-1) {
+            var j = 2 * k + 1;
+            if(j+1 <= this.count-1 && this.data[j+1] > this.data[j]) {
+                j++;
+            }
+            if(t > this.data[j]) break;
+            arr[k] = arr[j];
+            k = j;
+        }
+        // 最后再赋值
+        this.data[k] = e;
+    }
     // 从最大堆中取出堆顶元素，即堆中所存储的最大数据
     extractMax() {
         if(this.count <=0) return;
