@@ -14,3 +14,9 @@
 - [单向链表](https://github.com/taokexia/JavaScript-Algorithm/blob/master/JavaScript/LinkedList/LinkedList.js)
 - [双向链表](https://github.com/taokexia/JavaScript-Algorithm/blob/master/JavaScript/LinkedList/DoubleLinkedList.js)
 - [双向循环链表](https://github.com/taokexia/JavaScript-Algorithm/blob/master/JavaScript/LinkedList/DoubleLoopLinkedList.js)
+
+堆：
+
+- [最大堆](https://github.com/taokexia/JavaScript-Algorithm/blob/master/JavaScript/Heap/MaxHeap.js)
+- [最大索引堆](https://github.com/taokexia/JavaScript-Algorithm/blob/master/JavaScript/Heap/IndexMaxHeap.js)
+- [最小堆](https://github.com/taokexia/JavaScript-Algorithm/blob/master/JavaScript/Heap/MinHeap.js)
