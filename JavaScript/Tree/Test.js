@@ -1,5 +1,5 @@
 // 测试二叉树
-var BST = require('./BST');
+var BST = require('./BSTI');
 
 // 测试代码
 var bst = new BST();
@@ -59,3 +59,31 @@ bst.preOrderTraversal(function (key) {
     resultString += key + " ";
 })
 console.log(resultString); // 11 7 5 3 6 9 8 15 13 12 14 25 18
+
+console.log("=================================测试二分搜索树=============================");
+var bstii = new require('./BSTII.js');
+var b = new bstii.BST();
+b.insert(1, 5);
+b.insert(5, 9);
+b.insert(3, 10);
+b.insert(6, 5);
+b.insert(9, 9);
+b.insert(8, 10);
+b.insert(12, 5);
+b.insert(18, 9);
+b.insert(20, 10);
+b.insert(25, 5);
+b.insert(13, 9);
+b.insert(7, 10);
+b.levelOrder();
+b.inOrder();
+console.log(b.minimun());
+console.log(b.maximun());
+b.removeMin();
+b.removeMax();
+b.postOrder();
+b.remove(20);
+b.postOrder();
+console.log(b.size());
+console.log(b.isEmpty());
+

@@ -70,33 +70,6 @@ function insertNode(node, newNode) {
     }
 }
 
-// // 中序遍历
-// function inOrder(node) {
-//     if (!(node === null)) {
-//         inOrder(node.left);
-//         putstr(node.show() + " ");
-//         inOrder(node.right);
-//     }
-// }
-
-// // 先序遍历
-// function preOrder(node) {
-//     if (node !== null) {
-//         putstr(node.show() + " ");
-//         preOrder(node.left);
-//         preOrder(node.right);
-//     }
-// }
-
-// // 后续遍历
-// function postOrder(node) {
-//     if (node !== null) {
-//         postOrder(node.left);
-//         postOrder(node.right);
-//         putstr(node.show() + " ");
-//     }
-// }
-
 // 遍历方法
 // 先序遍历
 // handler为数据展示的方式
