@@ -1,5 +1,5 @@
 // 设置测试数量
-var n = 10000;
+var n = 100000;
 // 测试并查集
 console.log("=======================测试并查集I============================");
 // 虽然isConnected只需要O(1)的时间，但由于union操作需要O(n)时间
@@ -58,4 +58,46 @@ for(let i = 0; i < n; i++) {
     uf.isConnected(a, b);
 }
 console.timeEnd('UnionFindIII');
+// console.log(uf.parent);
+
+// 测试并查集
+console.log("=======================测试并查集IV============================");
+// 时间性能是O(n*h)的，h为并查集表达的树的最大高度
+// 相对III进行了优化，但优化地方出现情况较少，所以性能更优表现不明显，
+// 甚至在一些数据下性能会更差
+var UF = require('./UnionFindIV');
+var uf = new UF(n);
+console.time('UnionFindIV');
+for(let i = 0; i < n; i++) {
+    let a = Math.floor(Math.random()*n);
+    let b = Math.floor(Math.random()*n);
+    uf.unionElements(a, b);
+}
+for(let i = 0; i < n; i++) {
+    let a = Math.floor(Math.random()*n);
+    let b = Math.floor(Math.random()*n);
+    uf.isConnected(a, b);
+}
+console.timeEnd('UnionFindIV');
+// console.log(uf.parent);
+
+// 测试并查集
+console.log("=======================测试并查集V============================");
+// 时间性能是O(n*h)的，h为并查集表达的树的最大高度
+// 相对III进行了优化，但优化地方出现情况较少，所以性能更优表现不明显，
+// 甚至在一些数据下性能会更差
+var UF = require('./UnionFindV');
+var uf = new UF(n);
+console.time('UnionFindV');
+for(let i = 0; i < n; i++) {
+    let a = Math.floor(Math.random()*n);
+    let b = Math.floor(Math.random()*n);
+    uf.unionElements(a, b);
+}
+for(let i = 0; i < n; i++) {
+    let a = Math.floor(Math.random()*n);
+    let b = Math.floor(Math.random()*n);
+    uf.isConnected(a, b);
+}
+console.timeEnd('UnionFindV');
 // console.log(uf.parent);

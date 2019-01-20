@@ -24,6 +24,10 @@ JavaScript用于测试算法性能的常用方法总结:<br/>
 - [插入排序](./JavaScript/Sort/InsertSort.js)
 - [归并排序](./JavaScript/Sort/MergeSortI.js)
 
+数组：
+
+- [数组](./JavaScript/Array/Array.js)
+
 链表：
 
 - [单向链表](./JavaScript/LinkedList/LinkedList.js)
@@ -39,6 +43,15 @@ JavaScript用于测试算法性能的常用方法总结:<br/>
 树：
 - [二叉树I](./JavaScript/Tree/BSTI.js)
 - [二叉树II](./JavaScript/Tree/BSTII.js)
+
+并查集:
+一种树形结构，下面代码逐步优化.
+
+- [并查集I](./JavaScript/UnionFind/UnionFindI.js)
+- [并查集II](./JavaScript/UnionFind/UnionFindII.js)
+- [并查集III](./JavaScript/UnionFind/UnionFindIII.js)
+- [并查集IV](./JavaScript/UnionFind/UnionFindIV.js)
+- [并查集V](./JavaScript/UnionFind/UnionFindV.js)
 
 经典算法：
 
