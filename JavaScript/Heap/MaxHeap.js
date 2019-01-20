@@ -1,5 +1,6 @@
 /*
  * 最大堆
+ * 堆的本质是一种树形结构
  */
 module.exports.maxHeap = class MaxHeap {
     constructor() {

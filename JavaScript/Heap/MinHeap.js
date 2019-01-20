@@ -1,5 +1,6 @@
 /*
  * 最小堆
+ * 堆的本质是一种树形结构
  */
 module.exports = class MinHeap {
     constructor() {

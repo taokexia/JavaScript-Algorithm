@@ -1,5 +1,6 @@
 /*
  * 索引堆
+ * 堆的本质是一种树形结构
  */
 module.exports.IndexMaxHeap = class IndexMaxHeap {
     constructor() {
