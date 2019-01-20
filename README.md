@@ -2,6 +2,8 @@
 
 使用JavaScript来实现从常用的算法和数据结构
 
+## JavaScript测试算法性能 ##
+
 JavaScript用于测试算法性能的常用方法总结:<br/>
 方法一：
 
@@ -16,6 +18,57 @@ JavaScript用于测试算法性能的常用方法总结:<br/>
 	var end = Date.now();
 	console.log(end-start);
 
+## JavaScript迭代器的写法 ##
+
+标准迭代器写法：每一次调用`next`方法，都会返回数据结构的当前成员的信息。具体来说，就是返回一个包含`value`和`done`两个属性的对象。其中，`value`属性是当前成员的值，`done`属性是一个布尔值，表示遍历是否结束。
+
+    var it = makeIterator(['a', 'b']);
+	it.next() // { value: "a", done: false }
+	it.next() // { value: "b", done: false }
+	it.next() // { value: undefined, done: true }
+	
+	function makeIterator(array) {
+	  var nextIndex = 0;
+	  return {
+	    next: function() {
+	      return nextIndex < array.length ?
+	        {value: array[nextIndex++], done: false} :
+	        {value: undefined, done: true};
+	    }
+	  };
+	}
+
+ES6的写法：默认的 `Iterator` 接口部署在数据结构的`Symbol.iterator`属性，或者说，一个数据结构只要具有`Symbol.iterator`属性，就可以认为是“可遍历的”（iterable）。
+
+	const obj = {
+	  [Symbol.iterator] : function () {
+	    return {
+	      next: function () {
+	        return {
+	          value: 1,
+	          done: true
+	        };
+	      }
+	    };
+	  }
+	};
+
+使用generator：
+
+	let generator = function* () {
+	  yield 1;
+	  yield* [2,3,4];
+	  yield 5;
+	};
+	
+	var iterator = generator();
+	
+	iterator.next() // { value: 1, done: false }
+	iterator.next() // { value: 2, done: false }
+	iterator.next() // { value: 3, done: false }
+	iterator.next() // { value: 4, done: false }
+	iterator.next() // { value: 5, done: false }
+	iterator.next() // { value: undefined, done: true }
 
 排序算法：
 
