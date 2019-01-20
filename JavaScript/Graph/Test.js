@@ -31,3 +31,28 @@ var Graph = require('./Graph');
  console.log(graph.pathTo("F", "G")); // [ 'F', 'B', 'A', 'C', 'G' ]
 
  console.log(graph.topSort()); // [ 'A', 'C', 'D', 'H', 'G', 'B', 'F', 'E', 'I' ]
+
+ console.log('==============================测试稠密图==========================================');
+ var DenseGraph = require('./DenseGraph');
+ var N = 20;
+ var M = 100;
+var dgraph = new DenseGraph(N, false);
+for(let i = 0; i < M; i++) {
+    let a = Math.floor(Math.random()*N);
+    let b = Math.floor(Math.random()*N);
+    dgraph.addEdge(a, b);
+}
+dgraph.show();
+
+console.log('==============================测试稀疏图==========================================');
+var SparseGraph = require('./SparseGraph');
+var N = 20;
+var M = 100;
+var sgraph = new SparseGraph(N, false);
+for(let i = 0; i < M; i++) {
+   let a = Math.floor(Math.random()*N);
+   let b = Math.floor(Math.random()*N);
+   sgraph.addEdge(a, b);
+}
+sgraph.show();
+
