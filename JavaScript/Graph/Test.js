@@ -71,3 +71,8 @@ cgraph.addEdge(4, 5);
 cgraph.addEdge(4, 6);
 var c = new Component(cgraph);
 console.log("联通分量为: "+ c.count());
+
+console.log('==============================测试寻路算法==========================================');
+var Path = require('./Path');
+var p = new Path(cgraph, 0);
+p.showPath(6);
