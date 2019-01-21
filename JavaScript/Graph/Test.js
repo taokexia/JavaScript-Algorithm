@@ -76,3 +76,7 @@ console.log('==============================测试寻路算法===================
 var Path = require('./Path');
 var p = new Path(cgraph, 0);
 p.showPath(6);
+console.log('==============================测试最短路径算法==========================================');
+var ShortestPath = require('./ShortestPath');
+var sp = new ShortestPath(cgraph, 0);
+sp.showPath(6);

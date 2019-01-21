@@ -2,6 +2,58 @@
 
 使用JavaScript来实现从常用的算法和数据结构
 
+排序算法：
+
+- [冒泡排序](./JavaScript/Sort/BubbleSort.js)
+- [选择排序](./JavaScript/Sort/SelectSort.js)
+- [插入排序](./JavaScript/Sort/InsertSort.js)
+- [归并排序](./JavaScript/Sort/MergeSortI.js)
+
+数组：
+
+- [数组](./JavaScript/Array/Array.js)
+
+链表：
+
+- [单向链表](./JavaScript/LinkedList/LinkedList.js)
+- [双向链表](./JavaScript/LinkedList/DoubleLinkedList.js)
+- [双向循环链表](./JavaScript/LinkedList/DoubleLoopLinkedList.js)
+
+堆：
+
+- [最大堆](./JavaScript/Heap/MaxHeap.js)
+- [最大索引堆](./JavaScript/Heap/IndexMaxHeap.js)
+- [最小堆](./JavaScript/Heap/MinHeap.js)
+
+树：
+- [二叉树I](./JavaScript/Tree/BSTI.js)
+- [二叉树II](./JavaScript/Tree/BSTII.js)
+
+并查集:
+一种树形结构，下面代码逐步优化.
+
+- [并查集I](./JavaScript/UnionFind/UnionFindI.js)
+- [并查集II](./JavaScript/UnionFind/UnionFindII.js)
+- [并查集III](./JavaScript/UnionFind/UnionFindIII.js)
+- [并查集IV](./JavaScript/UnionFind/UnionFindIV.js)
+- [并查集V](./JavaScript/UnionFind/UnionFindV.js)
+
+图论：
+
+- [图的实现](./JavaScript/Graph/Graph.js)
+- [稠密图](./JavaScript/Graph/DenseGraph.js)
+- [稀疏图](./JavaScript/Graph/SparseGraph.js)
+- [联通分量](./JavaScript/Graph/Components.js)
+- [寻路算法](./JavaScript/Graph/Path.js)
+- [最短路径算法](./JavaScript/Graph/ShortestPath.js)
+
+经典算法：
+
+- [二分查找](./JavaScript/Typical/binarySearch.js)
+- [二分查找优化](./JavaScript/Typical/binarySearchAdv.js)
+
+# 补充 #
+
 ## JavaScript测试算法性能 ##
 
 JavaScript用于测试算法性能的常用方法总结:<br/>
@@ -69,44 +121,3 @@ ES6的写法：默认的 `Iterator` 接口部署在数据结构的`Symbol.iterat
 	iterator.next() // { value: 4, done: false }
 	iterator.next() // { value: 5, done: false }
 	iterator.next() // { value: undefined, done: true }
-
-排序算法：
-
-- [冒泡排序](./JavaScript/Sort/BubbleSort.js)
-- [选择排序](./JavaScript/Sort/SelectSort.js)
-- [插入排序](./JavaScript/Sort/InsertSort.js)
-- [归并排序](./JavaScript/Sort/MergeSortI.js)
-
-数组：
-
-- [数组](./JavaScript/Array/Array.js)
-
-链表：
-
-- [单向链表](./JavaScript/LinkedList/LinkedList.js)
-- [双向链表](./JavaScript/LinkedList/DoubleLinkedList.js)
-- [双向循环链表](./JavaScript/LinkedList/DoubleLoopLinkedList.js)
-
-堆：
-
-- [最大堆](./JavaScript/Heap/MaxHeap.js)
-- [最大索引堆](./JavaScript/Heap/IndexMaxHeap.js)
-- [最小堆](./JavaScript/Heap/MinHeap.js)
-
-树：
-- [二叉树I](./JavaScript/Tree/BSTI.js)
-- [二叉树II](./JavaScript/Tree/BSTII.js)
-
-并查集:
-一种树形结构，下面代码逐步优化.
-
-- [并查集I](./JavaScript/UnionFind/UnionFindI.js)
-- [并查集II](./JavaScript/UnionFind/UnionFindII.js)
-- [并查集III](./JavaScript/UnionFind/UnionFindIII.js)
-- [并查集IV](./JavaScript/UnionFind/UnionFindIV.js)
-- [并查集V](./JavaScript/UnionFind/UnionFindV.js)
-
-经典算法：
-
-- [二分查找](./JavaScript/Typical/binarySearch.js)
-- [二分查找优化](./JavaScript/Typical/binarySearchAdv.js)
