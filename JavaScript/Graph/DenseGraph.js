@@ -51,6 +51,18 @@ module.exports = class DenseGraph {
         }
         console.log(str);
     }
+    // 以矩阵的形式显示图的信息
+    showII() {
+        let str = "";
+        for(let i = 0; i < this.n; i++) {
+            for(let j = 0; j < this.n; j++) {
+                let sign = this.g[i][j]? 1 : 0;
+                str += sign + " ";
+            }
+            str += "\n";
+        }
+        console.log(str);
+    }
 }
 
 // 迭代器，传入一个图和一个顶点,

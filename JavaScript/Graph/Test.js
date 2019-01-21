@@ -43,6 +43,7 @@ for(let i = 0; i < M; i++) {
     dgraph.addEdge(a, b);
 }
 dgraph.show();
+dgraph.showII();
 
 console.log('==============================测试稀疏图==========================================');
 var SparseGraph = require('./SparseGraph');
@@ -56,3 +57,17 @@ for(let i = 0; i < M; i++) {
 }
 sgraph.show();
 
+console.log('==============================测试联通分量==========================================');
+var Component = require('./Components');
+var cgraph = new SparseGraph(9, false);
+cgraph.addEdge(7, 8);
+cgraph.addEdge(0, 1);
+cgraph.addEdge(0, 2);
+cgraph.addEdge(0, 5);
+cgraph.addEdge(0, 6);
+cgraph.addEdge(3, 4);
+cgraph.addEdge(3, 5);
+cgraph.addEdge(4, 5);
+cgraph.addEdge(4, 6);
+var c = new Component(cgraph);
+console.log("联通分量为: "+ c.count());
