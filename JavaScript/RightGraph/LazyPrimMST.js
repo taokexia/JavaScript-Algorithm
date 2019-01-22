@@ -1,6 +1,7 @@
 var MinHeap = require('./MinHeap');
 var Edge = require('./Edge');
 // 使用Prim算法求图的最小生成树
+// 时间复杂度 O(ElogE)
 module.exports = class LazyPrimMST {
     constructor(g) {
         this.data = g.g; // 传入的图类的数据

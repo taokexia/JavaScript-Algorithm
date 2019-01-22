@@ -65,3 +65,16 @@ for(let i = 0; i < mst.length; i++) {
 console.log(str);
 console.log("The MST weight is "+ lpm2.result());
 console.timeEnd("LazyPrimMSTII");
+
+console.log("======================================测试Kruskal算法=============================");
+console.time("Kruskal");
+var KruskalMST = require('./KruskalMST');
+var km = new KruskalMST(sg);
+var mst = km.mstEdges();
+var str = "";
+for(let i = 0; i < mst.length; i++) {
+    str += mst[i].toString();
+}
+console.log(str);
+console.log("The MST weight is "+ km.result());
+console.timeEnd("Kruskal");

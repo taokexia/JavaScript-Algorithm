@@ -1,6 +1,7 @@
 var IndexMinHeap = require('./IndexMinHeap');
 var Edge = require('./Edge');
 // 使用优化的Prim算法求图的最小生成树
+// 时间复杂度O(ElogV)
 module.exports = class LazyPrimMST {
     constructor(g) {
         this.data = g.g; // 传入的图类的数据

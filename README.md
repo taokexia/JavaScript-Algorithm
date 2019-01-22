@@ -2,34 +2,34 @@
 
 使用JavaScript来实现从常用的算法和数据结构
 
-排序算法：
+### 排序算法： 
 
 - [冒泡排序](./JavaScript/Sort/BubbleSort.js)
 - [选择排序](./JavaScript/Sort/SelectSort.js)
 - [插入排序](./JavaScript/Sort/InsertSort.js)
 - [归并排序](./JavaScript/Sort/MergeSortI.js)
 
-数组：
+### 数组：
 
 - [数组](./JavaScript/Array/Array.js)
 
-链表：
+### 链表：
 
 - [单向链表](./JavaScript/LinkedList/LinkedList.js)
 - [双向链表](./JavaScript/LinkedList/DoubleLinkedList.js)
 - [双向循环链表](./JavaScript/LinkedList/DoubleLoopLinkedList.js)
 
-堆：
+### 堆：
 
 - [最大堆](./JavaScript/Heap/MaxHeap.js)
 - [最大索引堆](./JavaScript/Heap/IndexMaxHeap.js)
 - [最小堆](./JavaScript/Heap/MinHeap.js)
 
-树：
+### 树：
 - [二叉树I](./JavaScript/Tree/BSTI.js)
 - [二叉树II](./JavaScript/Tree/BSTII.js)
 
-并查集:
+### 并查集:
 一种树形结构，下面代码逐步优化.
 
 - [并查集I](./JavaScript/UnionFind/UnionFindI.js)
@@ -38,7 +38,7 @@
 - [并查集IV](./JavaScript/UnionFind/UnionFindIV.js)
 - [并查集V](./JavaScript/UnionFind/UnionFindV.js)
 
-图论：
+### 图论：
 
 - [图的实现](./JavaScript/Graph/Graph.js)
 - [稠密图](./JavaScript/Graph/DenseGraph.js)
@@ -47,7 +47,16 @@
 - [寻路算法](./JavaScript/Graph/Path.js)
 - [最短路径算法](./JavaScript/Graph/ShortestPath.js)
 
-经典算法：
+### 最小生成树：
+
+- [有权图边的定义](./JavaScript/RightGraph/Edge.js)
+- [稠密图](./JavaScript/RightGraph/DenseGraph.js)
+- [稀疏图](./JavaScript/RightGraph/SparseGraph.js)
+- [Prim算法](./JavaScript/RightGraph/LazyPrimMST.js)
+- [Prim算法II](./JavaScript/RightGraph/LazyPrimMSTII.js)
+- [Kruskal算法](./JavaScript/RightGraph/KruskalMST.js)
+
+### 经典算法：
 
 - [二分查找](./JavaScript/Typical/binarySearch.js)
 - [二分查找优化](./JavaScript/Typical/binarySearchAdv.js)
