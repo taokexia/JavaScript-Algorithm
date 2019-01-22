@@ -26,7 +26,7 @@ module.exports = class Edge {
     }
     // 输出边的信息
     toString() {
-        let str = ""+this.a+"-"+this.b+":"+this.weight;
+        let str = ""+this.a+"-"+this.b+":"+this.weight+"\n";
         return str;
     }
 }

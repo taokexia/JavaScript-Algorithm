@@ -39,3 +39,14 @@ sg.addEdge(3, 6, 0.52);
 sg.addEdge(6, 0, 0.58);
 sg.addEdge(6, 4, 0.93);
 sg.show();
+
+console.log("======================================测试最小生成树====================================");
+var LazyPrimMST  = require('./LazyPrimMST');
+var lpm = new LazyPrimMST(sg);
+var mst = lpm.mstEdges();
+var str = "";
+for(let i = 0; i < mst.length; i++) {
+    str += mst[i].toString();
+}
+console.log(str);
+console.log("The MST weight is "+ lpm.result());
