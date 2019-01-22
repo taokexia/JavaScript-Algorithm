@@ -41,6 +41,7 @@ sg.addEdge(6, 4, 0.93);
 sg.show();
 
 console.log("======================================测试最小生成树====================================");
+console.time("LazyPrimMST");
 var LazyPrimMST  = require('./LazyPrimMST');
 var lpm = new LazyPrimMST(sg);
 var mst = lpm.mstEdges();
@@ -50,3 +51,17 @@ for(let i = 0; i < mst.length; i++) {
 }
 console.log(str);
 console.log("The MST weight is "+ lpm.result());
+console.timeEnd("LazyPrimMST");
+
+console.log("======================================测试优化后的最小生成树=============================");
+console.time("LazyPrimMSTII");
+var LazyPrimMSTII = require('./LazyPrimMSTII');
+var lpm2 = new LazyPrimMSTII(sg);
+var mst = lpm2.mstEdges();
+var str = "";
+for(let i = 0; i < mst.length; i++) {
+    str += mst[i].toString();
+}
+console.log(str);
+console.log("The MST weight is "+ lpm2.result());
+console.timeEnd("LazyPrimMSTII");
