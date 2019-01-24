@@ -38,6 +38,12 @@
 - [并查集IV](./JavaScript/UnionFind/UnionFindIV.js)
 - [并查集V](./JavaScript/UnionFind/UnionFindV.js)
 
+### 线段树:
+一种树形结构，用于获取区间内数值操作的结果
+
+- [线段树I](./JavaScript/SegmentTree/SegmentTree.js)
+- [线段树II](./JavaScript/SegmentTree/SegmentTreeII.js)
+
 ### 图论：
 
 - [图的实现](./JavaScript/Graph/Graph.js)
