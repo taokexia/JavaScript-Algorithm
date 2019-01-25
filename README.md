@@ -44,6 +44,11 @@
 - [线段树I](./JavaScript/SegmentTree/SegmentTree.js)
 - [线段树II](./JavaScript/SegmentTree/SegmentTreeII.js)
 
+### 字典树:
+一种树型结构，用于字符串匹配
+
+- [字典树](./JavaScript/Trie/Trie.js)
+
 ### 图论：
 
 - [图的实现](./JavaScript/Graph/Graph.js)
