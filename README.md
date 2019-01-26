@@ -13,6 +13,15 @@
 
 - [数组](./JavaScript/Array/Array.js)
 
+### 栈：
+
+- [栈](./JavaScript/Stack.js)
+
+### 队列:
+
+- [队列](./JavaScript/Queue.js)
+- [优先队列](./JavaScript/PriorityQueue.js)
+
 ### 链表：
 
 - [单向链表](./JavaScript/LinkedList/LinkedList.js)
