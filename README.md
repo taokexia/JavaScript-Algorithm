@@ -81,6 +81,10 @@
 - [二分查找](./JavaScript/Typical/binarySearch.js)
 - [二分查找优化](./JavaScript/Typical/binarySearchAdv.js)
 
+### 字符串相关算法：
+
+- [Levenshtein Distance 莱文斯坦距离](./JavaScript/String/Levenshtein_Distance.js)
+
 # 补充 #
 
 ## JavaScript测试算法性能 ##
