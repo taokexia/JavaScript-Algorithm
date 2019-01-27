@@ -58,6 +58,12 @@
 
 - [字典树](./JavaScript/Trie/Trie.js)
 
+### AVL树：
+一种平衡二叉树
+
+- [AVL树I](./JavaScript/AVLTree/AVLTree.js)
+- [AVL树II](./JavaScript/AVLTree/AVLTreeII.js)
+
 ### 图论：
 
 - [图的实现](./JavaScript/Graph/Graph.js)
