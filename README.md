@@ -64,6 +64,10 @@
 - [AVL树I](./JavaScript/AVLTree/AVLTree.js)
 - [AVL树II](./JavaScript/AVLTree/AVLTreeII.js)
 
+### 红黑树
+
+- [红黑树](./JavaScript/RBTree/RBTree.js)
+
 ### 图论：
 
 - [图的实现](./JavaScript/Graph/Graph.js)
